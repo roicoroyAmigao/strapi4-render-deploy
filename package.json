@@ -36,6 +36,7 @@
     "react-html-parser": "^2.0.2",
     "react-is": "^18.1.0",
     "sqlite3": "5.0.6",
+    "strapi-plugin-fcm": "^1.0.4",
     "strapi-stripe": "2.5.1",
     "stripe": "10.12.0"
   },
