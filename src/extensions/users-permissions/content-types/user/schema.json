@@ -98,7 +98,10 @@
     },
     "postal_code": {
       "type": "string",
-      "minLength": 2,
+      "unique": true
+    },
+    "device_token": {
+      "type": "string",
       "unique": true
     }
   }

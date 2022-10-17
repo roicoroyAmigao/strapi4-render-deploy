@@ -20,6 +20,8 @@ module.exports = plugin => {
       ctx.state.user.id,
       {
         populate: [
+          'first_name',
+          'last_name',
           'address_1',
           'address_2',
           'city',
@@ -27,10 +29,9 @@ module.exports = plugin => {
           // from strapi user, it will belong to CheckoutState
           'region_code',
           'country',
-          'first_name',
-          'last_name',
-          'phone',
           'postal_code',
+          'phone',
+          'device_token'
         ]
       }
     );
@@ -42,15 +43,16 @@ module.exports = plugin => {
     const users = await strapi.entityService.findMany(
       'plugin::users-permissions.user',
       { ...ctx.params, populate: [
+        'first_name',
+        'last_name',
         'address_1',
         'address_2',
         'city',
         'region_code',
         'country',
-        'first_name',
-        'last_name',
-        'phone',
         'postal_code',
+        'phone',
+        'device_token'
       ] 
       }
     );
