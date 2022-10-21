@@ -11,6 +11,7 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@roicoroy/strapi-plugin-fcm": "file:src/plugins/strapi-plugin-fcm",
     "@strapi/admin": "4.4.1",
     "@strapi/plugin-graphql": "4.4.1",
     "@strapi/plugin-i18n": "4.4.1",
@@ -22,6 +23,7 @@
     "@vscode/sqlite3": "5.0.8",
     "better-sqlite3": "7.4.6",
     "cors": "^2.8.5",
+    "firebase": "^9.12.1",
     "firebase-admin": "^11.1.0",
     "html-react-parser": "^1.4.12",
     "jest": "^27.5.1",
@@ -36,7 +38,6 @@
     "react-html-parser": "^2.0.2",
     "react-is": "^18.1.0",
     "sqlite3": "5.0.6",
-    "strapi-plugin-fcm": "^1.0.4",
     "strapi-stripe": "2.5.1",
     "stripe": "10.12.0"
   },
