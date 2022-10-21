@@ -1,4 +1,4 @@
-const pluginPkg = require('../../package.json');
+const pluginPkg = require('../../settings.json');
 
 const pluginId = pluginPkg.name;// .replace(/^(@[^-,.][\w,-]+\/|strapi-)plugin-/i, '');
 
