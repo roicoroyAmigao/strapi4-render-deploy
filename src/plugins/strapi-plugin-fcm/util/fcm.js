@@ -2,7 +2,6 @@
 
 const admin = require("firebase-admin");
 
-
 module.exports = {
     /*
     * Send a message to a device(s) or a topic.
@@ -55,12 +54,11 @@ module.exports = {
     * */
     initialize: async (strapi) => {
         // console.log('initialize FCM');
-
         const { serviceAccount } = await strapi.db.query('plugin::strapi-plugin-fcm.fcm-plugin-configuration').findOne({
             select: ['serviceAccount']
         });
-        console.log('serviceAccount', serviceAccount);
-        console.log('admin.apps?.length', admin.apps?.length);
+        // console.log('serviceAccount', serviceAccount);
+        // console.log('admin.apps?.length', admin.apps?.length);
         if (serviceAccount) {
             if (admin.apps?.length > 1) {
                 Promise.all(admin.apps.map(app => app.delete())).then(() => {
