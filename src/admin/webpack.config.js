@@ -3,7 +3,7 @@ const _ = require('lodash');
 const path = require('path');
 const strapiCacheSrcPath = path.resolve(__dirname, "../../.cache/admin/src");
 
-const firebase = require("firebase");
+const firebase = require("firebase/app");
 
 const config = {
     firebase: {
