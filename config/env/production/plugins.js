@@ -9,8 +9,8 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  'strapi-plugin-fcm': {
-    enabled: true,
-    resolve: './src/plugins/strapi-plugin-fcm'
-  },
+  // 'strapi-plugin-fcm': {
+  //   enabled: true,
+  //   resolve: './src/plugins/strapi-plugin-fcm'
+  // },
 });
