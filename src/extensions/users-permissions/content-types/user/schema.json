@@ -80,12 +80,10 @@
       "type": "string"
     },
     "region_code": {
-      "type": "string",
-      "unique": true
+      "type": "string"
     },
     "country": {
-      "type": "string",
-      "unique": true
+      "type": "string"
     },
     "first_name": {
       "type": "string"
@@ -97,8 +95,7 @@
       "type": "string"
     },
     "postal_code": {
-      "type": "string",
-      "unique": true
+      "type": "string"
     },
     "device_token": {
       "type": "string",
