@@ -7,6 +7,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
+    "postbuild": "medusa migrations run",
+    "migrations": "medusa migrations run",
     "strapi": "strapi"
   },
   "dependencies": {
