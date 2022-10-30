@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "app_themes",
+  "info": {
+    "singularName": "app-theme",
+    "pluralName": "app-themes",
+    "displayName": "app-theme"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "primary": {
+      "type": "string"
+    },
+    "secondary": {
+      "type": "string"
+    },
+    "tertiary": {
+      "type": "string"
+    },
+    "info": {
+      "type": "string"
+    },
+    "success": {
+      "type": "string"
+    },
+    "warning": {
+      "type": "string"
+    },
+    "danger": {
+      "type": "string"
+    },
+    "dark": {
+      "type": "string"
+    },
+    "medium": {
+      "type": "string"
+    },
+    "light": {
+      "type": "string"
+    }
+  }
+}
