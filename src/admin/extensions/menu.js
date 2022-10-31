@@ -1,5 +1,5 @@
 const menu = {
-  logo: './logo.svg',
+  logo: '../assets/logo.svg',
 };
 
 export default menu;

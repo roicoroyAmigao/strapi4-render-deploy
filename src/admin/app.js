@@ -1,4 +1,6 @@
 import Logo from 'assets/logo.svg';
+import { theme } from './extensions/theme';
+import themes from 'strapi-code-themes';
 
 export default {
   config: {
@@ -25,11 +27,11 @@ export default {
       logo: Logo,
     },
     theme: {
+      colors: themes.oneDarkPro,
     },
     head: {
-      favicon:
-        Logo,
-      title: 'Mercado Amigão CMS',
+      favicon: Logo,
+      title: 'Ion News Blog Backend',
     },
     menu: {
       logo: Logo,

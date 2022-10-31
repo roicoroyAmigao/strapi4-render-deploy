@@ -6,15 +6,15 @@ const strapiCacheSrcPath = path.resolve(__dirname, "../../.cache/admin/src");
 const firebase = require("firebase/app");
 
 const config = {
-    firebase: {
-        apiKey: "AIzaSyDrZpLnEWCzbAB2iXM1uizR8J9Z8iP414c",
-        authDomain: "amigao-fcm.firebaseapp.com",
-        projectId: "amigao-fcm",
-        storageBucket: "amigao-fcm.appspot.com",
-        messagingSenderId: "139473613556",
-        appId: "1:139473613556:web:84143a5ba3fc3381bea4a1",
-        measurementId: "G-DW9N8LQLDQ"
-    },
+  firebase: {
+    apiKey: "AIzaSyCs09xqa2_RWVavWnSOIKkzjd4KI4XpL5c",
+    authDomain: "strapi-blog-news.firebaseapp.com",
+    projectId: "strapi-blog-news",
+    storageBucket: "strapi-blog-news.appspot.com",
+    messagingSenderId: "948746915670",
+    appId: "1:948746915670:web:42e856b4e661ca1d9110f7",
+    measurementId: "G-9WE85KYXY7"
+  },
 };
 firebase.initializeApp(config);
 

@@ -1,6 +1,6 @@
 const head = {
     favicon:
-        './logo.svg',
+        '../assets/logo.svg',
     title: 'Strapi test',
 };
 

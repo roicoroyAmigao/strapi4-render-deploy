@@ -7,8 +7,6 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "postbuild": "medusa migrations run",
-    "migrations": "medusa migrations run",
     "strapi": "strapi"
   },
   "dependencies": {
@@ -38,7 +36,8 @@
     "react-html-parser": "^2.0.2",
     "react-is": "^18.1.0",
     "sqlite3": "5.0.6",
-    "stripe": "10.12.0"
+    "stripe": "10.12.0",
+    "strapi-code-themes": "^1.0.2"
   },
   "author": {
     "name": "A Strapi developer"
