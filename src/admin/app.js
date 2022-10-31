@@ -27,7 +27,7 @@ export default {
       logo: Logo,
     },
     theme: {
-      colors: themes.oneDarkPro,
+      // colors: themes.oneDarkPro,
     },
     head: {
       favicon: Logo,
