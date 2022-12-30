@@ -12,9 +12,5 @@ module.exports = ({ env }) => ({
   'strapi-plugin-fcm': {
     enabled: true,
     resolve: './src/plugins/strapi-plugin-fcm'
-  },
-  'strapi-stripe': {
-    enabled: true,
-    resolve: './src/plugins/strapi-stripe'
-  },
+  }
 });

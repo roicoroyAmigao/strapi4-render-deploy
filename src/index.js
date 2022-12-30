@@ -18,33 +18,33 @@ module.exports = {
    * run jobs, or perform some special logic.
    */
   bootstrap({ strapi }) {
-    let seedData = axios.post(`http://localhost:9000/hooks/seed`);
+    // let seedData = axios.post(`http://localhost:9000/hooks/seed`);
 
-    seedData.then(async (res) => {
+    // seedData.then(async (res) => {
 
-      // console.log(res.data);
+    //   // console.log(res.data);
 
-      const products = await res?.data.products;
-      const regions = await res?.data.regions;
-      const shippingOptions = await res.data.shippingOptions;
-      const paymentProviders = await res.data.paymentProviders;
-      const fulfillmentProviders = await res?.data.fulfillmentProviders;
-      const shippingProfiles = await res?.data.shippingProfiles;
+    //   const products = await res?.data.products;
+    //   const regions = await res?.data.regions;
+    //   const shippingOptions = await res.data.shippingOptions;
+    //   const paymentProviders = await res.data.paymentProviders;
+    //   const fulfillmentProviders = await res?.data.fulfillmentProviders;
+    //   const shippingProfiles = await res?.data.shippingProfiles;
 
-      await strapi.services["api::fulfillment-provider.fulfillment-provider"].bootstrap(fulfillmentProviders);
-      await strapi.services["api::payment-provider.payment-provider"].bootstrap(paymentProviders);
-      await strapi.services["api::region.region"].bootstrap(regions);
-      await strapi.services["api::shipping-option.shipping-option"].bootstrap(shippingOptions);
-      await strapi.services["api::shipping-profile.shipping-profile"].bootstrap(shippingProfiles);
-      await strapi.services["api::product.product"].bootstrap(products);
+    //   await strapi.services["api::fulfillment-provider.fulfillment-provider"].bootstrap(fulfillmentProviders);
+    //   await strapi.services["api::payment-provider.payment-provider"].bootstrap(paymentProviders);
+    //   await strapi.services["api::region.region"].bootstrap(regions);
+    //   await strapi.services["api::shipping-option.shipping-option"].bootstrap(shippingOptions);
+    //   await strapi.services["api::shipping-profile.shipping-profile"].bootstrap(shippingProfiles);
+    //   await strapi.services["api::product.product"].bootstrap(products);
 
-      // const user = await strapi.services['plugin::users-permissions.user'];
-      // // user.count;
+    //   // const user = await strapi.services['plugin::users-permissions.user'];
+    //   // // user.count;
 
-      // user.exists().then((res) => {
-      //   console.log(res);
-      // });
+    //   // user.exists().then((res) => {
+    //   //   console.log(res);
+    //   // });
 
-    });
+    // });
   },
 };
