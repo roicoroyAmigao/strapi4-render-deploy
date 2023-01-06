@@ -24,7 +24,7 @@
  import { NumberInput } from '@strapi/design-system/NumberInput';
  import { Textarea } from '@strapi/design-system/Textarea';
  import { uploadFiles } from '../../utils/apiCalls';
- 
+
  const CreateProduct = ({ isVisible, handleClose, handleClickSave }) => {
    const [title, setTitle] = useState('');
    const [price, setPrice] = useState();
@@ -45,10 +45,10 @@
    });
    const [upload, setUpload] = useState(false);
    const [uploadMessage, setUploadMessage] = useState('');
- 
+
    const handleChange = event => {
      const { name, value } = event.target;
- 
+
      if (name === 'title') {
        setTitle(value);
        setError({ ...error, title: '' });
@@ -60,11 +60,11 @@
        setError({ ...error, description: '' });
      }
    };
- 
+
    const handleChangePaymentType = value => {
      setPaymentType(value);
      setError({ ...error, paymentType: '' });
- 
+
      if (value === 'subscription') {
        setIsSubscription(true);
        setHeading('Subscription');
@@ -73,21 +73,21 @@
        setHeading('Product');
      }
    };
- 
+
    const handleChangePaymentInterval = value => {
      setPaymentInterval(value);
      setError({ ...error, paymentInterval: '' });
    };
- 
+
    const handleChangeNumber = value => {
      setPrice(value);
      setError({ ...error, price: '' });
    };
- 
+
    const handleChangeTrialPeriod = value => {
      setTrialPeriodDays(value);
    };
- 
+
    const handleSaveProduct = async () => {
      if (!title && !price && image.length === 0 && !description && !paymentType) {
        setError({
@@ -162,12 +162,12 @@
      } else {
        let imageId;
        let imageUrl;
- 
+
        if (image.length > 0) {
          setUpload(true);
          setUploadMessage('Uploading Product image');
          const response = await uploadFiles(image);
-         imageUrl = `${window.location.origin}${response.data[0].url}`;
+         imageUrl = `${response.data[0].url}`;
          imageId = response.data[0].id;
        }
        setUpload(false);
@@ -191,7 +191,7 @@
        setPaymentType('');
      }
    };
- 
+
    return (
      <Box>
        {isVisible && (
@@ -207,7 +207,7 @@
                >
                  Create {heading}
                </Typography>
- 
+
                <Box>
                  <Typography variant="omega">
                    {heading === 'Product'
@@ -258,7 +258,7 @@
                  <Typography variant="pi" fontWeight="bold">
                    Image <Typography textColor="danger700">&#42;</Typography>
                  </Typography>
- 
+
                  <Box paddingTop={3}>
                    <input type="file" name="image" onChange={handleChange} accept="image/*" />
                  </Box>
@@ -337,12 +337,11 @@
      </Box>
    );
  };
- 
+
  CreateProduct.propTypes = {
    isVisible: PropTypes.bool.isRequired,
    handleClose: PropTypes.func.isRequired,
    handleClickSave: PropTypes.func.isRequired,
  };
- 
+
  export default CreateProduct;
- 

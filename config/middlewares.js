@@ -14,7 +14,6 @@ module.exports = [
             "lh3.googleusercontent.com",
             "platform-lookaside.fbsbx.com",
             "dl.airtable.com",
-            ,
             "res.cloudinary.com",
           ],
           "media-src": [
@@ -24,7 +23,6 @@ module.exports = [
             "lh3.googleusercontent.com",
             "platform-lookaside.fbsbx.com",
             "dl.airtable.com",
-            ,
             "res.cloudinary.com",
           ],
           upgradeInsecureRequests: null,

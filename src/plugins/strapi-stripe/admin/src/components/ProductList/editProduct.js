@@ -136,7 +136,7 @@ const EditProduct = ({ productId, isEditVisible, handleCloseEdit, handleClickUpd
         const response = await uploadFiles(image);
 
         if (response.data[0].id) {
-          imageUrl = `${window.location.origin}${response.data[0].url}`;
+          imageUrl = `${response.data[0].url}`;
           imageId = response.data[0].id;
         }
         handleClickUpdateEdit(productId, title, imageUrl, description, imageId, stripeProduct);

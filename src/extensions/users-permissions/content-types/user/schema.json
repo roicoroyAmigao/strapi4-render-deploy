@@ -71,31 +71,50 @@
       "multiple": false
     },
     "address_1": {
-      "type": "string"
+      "type": "string",
+      "configurable": false
     },
     "address_2": {
-      "type": "string"
+      "type": "string",
+      "configurable": false
     },
     "city": {
-      "type": "string"
+      "type": "string",
+      "configurable": false
     },
     "region_code": {
-      "type": "string"
+      "type": "string",
+      "configurable": false
     },
     "country": {
-      "type": "string"
+      "type": "string",
+      "configurable": false
     },
     "first_name": {
-      "type": "string"
+      "type": "string",
+      "configurable": false
     },
     "last_name": {
-      "type": "string"
+      "type": "string",
+      "configurable": false
     },
     "phone": {
-      "type": "string"
+      "type": "string",
+      "configurable": false
     },
     "postal_code": {
-      "type": "string"
+      "type": "string",
+      "configurable": false
+    },
+    "fcm_accepted": {
+      "type": "boolean",
+      "unique": false,
+      "configurable": false
+    },
+    "app_language": {
+      "type": "string",
+      "unique": false,
+      "configurable": true
     },
     "device_token": {
       "type": "string",

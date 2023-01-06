@@ -25,12 +25,12 @@ module.exports = plugin => {
           'address_1',
           'address_2',
           'city',
-          // cotry code needs to be removed
-          // from strapi user, it will belong to CheckoutState
           'region_code',
           'country',
           'postal_code',
           'phone',
+          'fcm_accepted',
+          'app_language',
           'device_token'
         ]
       }
@@ -52,8 +52,10 @@ module.exports = plugin => {
         'country',
         'postal_code',
         'phone',
+        'fcm_accepted',
+        'app_language',
         'device_token'
-      ] 
+      ]
       }
     );
 
